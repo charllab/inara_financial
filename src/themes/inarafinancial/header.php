@@ -18,6 +18,6 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-
+<body <?php body_class(); ?>>    
     <?php get_template_part('partials/header'); ?>
+    <main class="l-<?= $post->post_name;?>-page">

@@ -3,6 +3,7 @@
 include_once get_template_directory().'/includes/gutenburg.php';
 include_once get_template_directory().'/includes/helper-functions.php';
 include_once get_template_directory().'/includes/bootstrap-wp-navwalker.php';
+include_once get_template_directory().'/includes/image-sizes.php';
 //include_once get_template_directory().'/includes/acf-custom-widget.php';
 
 /* Hooks */

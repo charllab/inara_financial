@@ -1,0 +1,41 @@
+.hero{
+    position:relative;
+}
+
+.hero > img{
+    object-fit: cover;
+    width:100%;
+
+    @include media-breakpoint-down(lg){        
+        height:260px;
+    }
+}
+
+.hero__content{
+    background-color:$bg-light;
+    border-radius:20px;
+    position:absolute;
+    bottom:67px;
+    padding:23px 36px 4px 30px;
+
+    .sub{
+        margin-bottom:6px;
+    }
+
+    .body-text{
+        margin-bottom:0;
+    }
+}
+
+.hero__buttons{
+    display:flex;
+    align-items:center;
+    list-style-type:none;
+    padding:0;
+    margin-top:12px;    
+    
+
+    > *:first-child{
+        margin-right:1rem;
+    }
+}

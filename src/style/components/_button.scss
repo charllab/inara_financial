@@ -1,5 +1,6 @@
 .button{
-    background: $secondary;
+    display:inline-block;
+    background-color: $secondary;
     border-radius: 30px;
     display:flex;
     justify-content: center;
@@ -7,10 +8,26 @@
     padding: 14px 28px;
     font-size:14px;
     font-weight:$semibold;
-    color:$text-white;
+    color:$text-light;
 
     &:hover{
         text-decoration: none;
-        color:$text-white;
+        color:$text-light;
     }
+}
+
+.button--secondary{
+    background-color:$bg-light;
+    color:$text-dark;
+    border:1px solid #000;
+    padding: 16px 46px;
+
+    &:hover{
+        text-decoration: none;
+        color:$text-dark;
+    }
+}
+
+.button--book{
+    padding:15px 31px;
 }
