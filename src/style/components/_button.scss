@@ -1,3 +1,16 @@
-button {
-    cursor: pointer;
+.button{
+    background: $secondary;
+    border-radius: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 28px;
+    font-size:14px;
+    font-weight:$semibold;
+    color:$text-white;
+
+    &:hover{
+        text-decoration: none;
+        color:$text-white;
+    }
 }

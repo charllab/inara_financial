@@ -1,6 +1,11 @@
 .nav.navbar{
+    .nav-link{
+        font-weight:$medium;
+    }
+
     .menu-item.active .nav-link{
         position:relative;
+        font-weight:$bold;
 
         //underline
         &:after{
@@ -15,4 +20,8 @@
             transform-origin:left;
         }
     }
+}
+
+.nav__cta{
+    margin-left:calc(46px - 1rem);
 }
