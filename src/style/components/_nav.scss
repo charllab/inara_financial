@@ -22,6 +22,12 @@
     }
 }
 
+.nav__logo{
+    object-fit: contain;
+    width:189px;
+    height:auto;
+}
+
 .nav__cta{
     margin-left:calc(46px - 1rem);
 }

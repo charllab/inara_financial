@@ -14,7 +14,7 @@
 </div>
 <section class="main-catch-section">
     <div class="main-catch-section__container container">
-        <?= wp_get_attachment_image( get_field('logo', 'options') );?>
+        <?= wp_get_attachment_image( get_field('logos', 'options')['for_light_bg'] );?>
         <div class="main-catch-section__content">
             <h2>The first step to realizing sustainable profitability. </h2>
             <p>What’s the secret to reaching your profit targets? There is a recipe, but it’s not a secret.

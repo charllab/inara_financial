@@ -1,9 +1,9 @@
 <header id="header" class="header">
     <nav class="nav navbar navbar-expand-lg">
         <div class="container">            
-            <div class="nav-logo">
+            <div class="nav__logo">
                 <a href="<?php echo esc_url(home_url('/')); ?>">
-                    <img src="<?= wp_get_attachment_url( get_field('logo', 'options') );?>"
+                    <img src="<?= wp_get_attachment_url( get_field('logos', 'options')['for_light_bg'] );?>"
                             alt="<?php bloginfo('name'); ?> - Logo"
                             class="img-fluid">
                     <span class="sr-only"><?php bloginfo('name'); ?></span>
