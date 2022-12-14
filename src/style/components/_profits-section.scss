@@ -1,0 +1,36 @@
+.profits-section{
+    h2{
+        position:relative;
+        display:inline-block;
+
+        &:after{
+            content:'';
+            width:172px;
+            height:6px;
+            background-color:$secondary;
+            position:absolute;
+            left:calc(100% + 20px);
+            top:calc(50% - 3px);
+        }
+    }
+}
+
+.profits-section{
+    padding:100px 0;
+}
+
+.profits-section ul{
+    list-style-type: none;
+    display:flex;
+    padding:0;
+    margin:-20px;
+
+    > *{
+        flex:0 0 50%;
+        padding:20px;
+
+        &:first-child{
+            margin-top:130px;
+        }
+    }
+}

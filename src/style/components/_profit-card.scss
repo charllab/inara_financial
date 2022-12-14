@@ -1,0 +1,15 @@
+.profit-card{
+    background-color:$bg-light;
+    padding:50px;
+    position:relative;
+}
+
+.profit-card > img{
+    width:162px;
+    height:162px;
+    object-fit: contain;
+    position:absolute;
+    top:0;
+    right:59px;
+    transform:translateY(-50%);
+}

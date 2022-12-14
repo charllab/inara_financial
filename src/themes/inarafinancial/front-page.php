@@ -37,4 +37,22 @@
         </div>
     </div>
 </section>
+<section class="profits-section">
+    <div class="profits-section__container container">
+        <h2>Improve profits instantly.</h2>
+        <ul>
+            <?php for($i=0; $i < 2; $i++){?>
+                <li>
+                    <div class="profit-card">
+                        <img src="https://placekitten.com/162/162" alt="">
+                        <h3>Startup Profits</h3>
+                        <p class="body-text-semi">New small businesses with strong revenue potential</p>
+                        <p>Get the keys to smart financial decisions so you can reach your business goals faster.</p>
+                        <a class="button button--arrow" href="#">Learn More<i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </li>
+            <?php }?>
+        </ul>
+    </div>
+</section>
 <?php get_footer();

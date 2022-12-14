@@ -1,8 +1,7 @@
 .button{
-    display:inline-block;
+    display:inline-flex;
     background-color: $secondary;
     border-radius: 30px;
-    display:flex;
     justify-content: center;
     align-items: center;
     padding: 14px 28px;
@@ -30,4 +29,10 @@
 
 .button--book{
     padding:15px 31px;
+}
+
+.button--arrow{
+    i{
+        margin-left:19px;
+    }
 }
