@@ -6,9 +6,12 @@
 @import "base/global";
 
 // Layouts
-@import "layouts/header";
-@import "layouts/content";
-@import "layouts/footer";
+@import "layouts/container";
 
 // Components
+@import "components/header";
+@import "components/footer";
+@import "components/nav";
 @import "components/button";
+
+

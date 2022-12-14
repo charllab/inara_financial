@@ -1,0 +1,18 @@
+.nav.navbar{
+    .menu-item.active .nav-link{
+        position:relative;
+
+        //underline
+        &:after{
+            content:'';
+            width:calc(100% - 2rem);
+            height:2px;
+            background-color:$secondary;
+            position:absolute;
+            left:1rem;
+            bottom:calc(0.5rem - 3px);
+            transform:scaleX(0.7);
+            transform-origin:left;
+        }
+    }
+}

@@ -5,10 +5,13 @@
 $enable-print-styles: false;
 
 // Colors
-$primary: #333;
-$secondary: #999;
+$primary: #28525C;
+$secondary: #C2A360;
 
-$body-color: #555;
+$bg-white:#FFF;
+$bg-light:#F3F6F7;
+$bg-highlight:#ABC9BE;
+
 $headings-color: $primary;
 $input-focus-border-color: $primary;
 
@@ -32,18 +35,26 @@ $container-max-widths: (
     md: 767.5px,
     lg: 991.5px,
     xl: 1199.5px,
-    xxl: 1404px
+    xxl: 1108px + 60px
 );
 
 // Misc
-
 $spacer: 1rem;
 
 // Fonts
-$font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-$font-family-serif: Georgia, Times, Times New Roman, serif;
+$font-family-sans-serif: 'Montserrat', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-serif: 'Montserrat', Georgia, Times, Times New Roman, serif;
 $headings-font-family: $font-family-serif;
+
+// Font Weights
+$regular:400;
+$medium:500;
+$semibold:600;
+$bold:700;
 
 // Figure
 $figure-margin: $spacer * 2.5;
 $matrix-block-margin: $figure-margin;
+
+// Navbar
+$navbar-nav-link-padding-x:1rem;

@@ -9,6 +9,10 @@
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/61d303198f.js" crossorigin="anonymous"></script>
 
     <?php wp_head(); ?>
@@ -16,4 +20,4 @@
 
 <body <?php body_class(); ?>>
 
-    <?php get_template_part('partials/header/hero-nav-overlay'); ?>
+    <?php get_template_part('partials/header'); ?>
