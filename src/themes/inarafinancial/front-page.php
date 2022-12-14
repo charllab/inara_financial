@@ -55,4 +55,40 @@
         </ul>
     </div>
 </section>
+<section class="testimonial-section">
+    <div class="testimonial-section__container container">
+        <div class="testimonial-section__content">
+            <h2 class="h1">What customer say about us.</h2>
+            <div class="testimonial-section__slider-container">
+                <div id="testimonial-slider" class="testimonial-section__slider carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <?php for($i=0; $i < 3; $i++){?>
+                            <div class="carousel-item <?= ($i === 0 ? 'active' : '') ?>">
+                                <figure class="testimonial-card">
+                                    <blockquote>
+                                        <p class="sub-text">“Our team worked with Joti to take our business to the next level. She was amazing to work with and her help allowed us to grow from a start up, to an established business.”</p>
+                                    </blockquote>
+                                    <figcaption>
+                                        <img src="https://placekitten.com/68/68" alt="">
+                                        <div class="body-text-semi">
+                                            <span>Djamila Malak,</span>
+                                            <cite>Owner of RoboCo.</cite>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        <?php }?>
+                    </div>
+                    <a class="carousel-control-prev" href="#testimonial-slider" role="button" data-slide="prev">
+                        <i class="fas fa-arrow-left"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#testimonial-slider" role="button" data-slide="next">
+                        <i class="fas fa-arrow-right"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+        </div>
+    </div>
+</section>
 <?php get_footer();

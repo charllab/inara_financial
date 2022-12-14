@@ -1,0 +1,23 @@
+.testimonial-card{        
+    figcaption{
+        display:flex;
+        align-items: center;
+        margin-top:20px;
+    }
+
+    figcaption img{
+        object-fit: cover;
+        width:68px;
+        height:68px;
+        border-radius:50%;
+        overflow:hidden;        
+    }
+
+    figcaption > div{
+        margin-left:20px;
+
+        > *{
+            display:block;
+        }
+    }
+}
