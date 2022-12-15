@@ -1,4 +1,5 @@
 </main>
+<!--
 <footer class="footer">
     <div class="footer__container container">
         <div>
@@ -40,7 +41,7 @@
             </div>
         </div>
     </div>
-</footer>
+</footer>-->
 
 <?php wp_footer(); ?>
 

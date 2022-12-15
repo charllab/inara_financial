@@ -1,0 +1,113 @@
+.navigation{
+    &.navbar{
+        @include sp{
+            padding:0;
+        }
+    }
+
+    .navbar-collapse.collapse:not(.show){
+        @include sp{
+            display:block;
+        }
+    }
+
+    .navbar-collapse{
+        @include sp{
+            position:fixed;
+            top:0;
+            left:0;
+            width:100vw;
+            height:100vh;            
+            padding:86px 30px;
+            transition:background-color 0.25s 0.4s ease-in;
+            z-index:100;
+            pointer-events:none;
+        }
+
+        .menu-item{
+            @include sp{
+                transform:translateX(-100%);
+                opacity:0;
+
+                @for $i from 1 through 8 {
+                    &:nth-child(#{$i}) {                                            
+                        transition: 
+                            transform 0.4s (0.01s * (8 - $i)) $ease-in-back,
+                            opacity 0.8s (0.01s * (8 - $i)) ease-in;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-collapse.show{
+        @include sp{
+            background-color:$bg-white;
+            pointer-events:auto;
+            transition:background-color 0.25s ease-out;
+        }
+
+        .menu-item{
+            @include sp{
+                transform:none;
+                opacity:1;
+
+                @for $i from 1 through 8 {
+                    &:nth-child(#{$i}) {                                            
+                        transition: 
+                            transform 0.8s (0.05s * ($i)) $ease-out-back,
+                            opacity 1s (0.05s * ($i)) ease-out;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-link{
+        font-weight:$medium;
+
+        @include sp{
+            display:inline-block;            
+        }
+    }
+
+    .menu-item.active .nav-link{
+        position:relative;
+        font-weight:$bold;
+
+        //underline
+        &:after{
+            content:'';
+            width:calc(100% - 2rem);
+            height:2px;
+            background-color:$secondary;
+            position:absolute;
+            left:1rem;
+            bottom:calc(0.5rem - 3px);
+            transform:scaleX(0.7);
+            transform-origin:left;
+
+            @include sp{
+                left:0;
+                width:calc(100% - 0.6rem);
+            }
+        }
+    }
+}
+
+.navigation__burger{
+    position:relative;
+    z-index:200;
+}
+
+.navigation__main{
+    display:flex;
+}
+
+.navigation__cta{
+    margin-left:calc(46px - 1rem);
+
+    @include sp{
+        display:none;
+    }
+}

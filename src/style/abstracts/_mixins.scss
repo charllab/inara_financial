@@ -11,3 +11,15 @@
     background: $left;
     background: linear-gradient(to right, $left $leftPos, $right $rightPos);
 }
+
+@mixin sp{    
+    @include media-breakpoint-down(md){ //max-width:lg
+        @content;
+    }
+}
+
+@mixin pc{    
+    @include media-breakpoint-up(lg){ //min-width:lg
+        @content;
+    }
+}

@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<!--
 <div class="hero">
     <?= wp_get_attachment_image(get_field('hero')['image'], 'hero');?>    
     <div class="container">
@@ -91,4 +92,5 @@
         </div>
     </div>
 </section>
+                        -->
 <?php get_footer();

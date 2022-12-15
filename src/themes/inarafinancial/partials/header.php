@@ -1,43 +1,43 @@
 <header id="header" class="header">
-    <nav class="nav navbar navbar-expand-lg">
-        <div class="container">            
-            <div class="nav__logo">
-                <a href="<?php echo esc_url(home_url('/')); ?>">
-                    <img src="<?= wp_get_attachment_url( get_field('logos', 'options')['for_light_bg'] );?>"
-                            alt="<?php bloginfo('name'); ?> - Logo"
-                            class="img-fluid">
-                    <span class="sr-only"><?php bloginfo('name'); ?></span>
-                </a>
-            </div>            
-            <div class="d-flex">
-                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target=".mainnav-m" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="d-lg-flex flex-lg-column d-none d-lg-block">
+    <div class="header__container container">
+        <div class="header__logo">
+            <a href="<?php echo esc_url(home_url('/')); ?>">
+                <img src="<?= wp_get_attachment_url( get_field('logos', 'options')['for_light_bg'] );?>"
+                        alt="<?php bloginfo('name'); ?> - Logo"
+                        class="img-fluid">
+                <span class="sr-only"><?php bloginfo('name'); ?></span>
+            </a>
+        </div>
+        <div class="header__nav">
+            <nav class="navigation navbar navbar-expand-lg">
+                <?php
+                    //bootstrap navwalker hooks
+                    $navwalker_id='js-nav';
+                ?>                
+                <div class="navigation__main">          
                     <?php wp_nav_menu([
                         'theme_location' => 'primary',
                         'container_class' => 'collapse navbar-collapse',
-                        'container_id' => 'mainnav',
-                        'menu_class' => 'navbar-nav ml-auto',
-                        'fallback_cb' => '',
-                        'menu_id' => 'main-menu',
+                        'container_id' => $navwalker_id,
+                        'menu_class' => 'navbar-nav',
+                        'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
                         'walker' => new understrap_WP_Bootstrap_Navwalker(),
-                    ]); ?>
+                    ]); ?>                    
+                    <a class="navigation__cta button" href="#">Schedule a Call</a>
                 </div>
-                <a class="nav__cta button" href="#">Schedule a Call</a>
-            </div>
-        </div>        
-    </nav>    
-
-    <div class="mainnav-m collapse navbar-collapse">
-        <?php wp_nav_menu([
-            'theme_location' => 'primary',
-            'container_class' => 'container',
-            'container_id' => 'mainnav',
-            'menu_class' => 'navbar-nav ml-auto',
-            'fallback_cb' => '',
-            'menu_id' => 'main-menu',
-            'walker' => new understrap_WP_Bootstrap_Navwalker(),
-        ]); ?>
+                <div class="navigation__burger">
+                    <button class="burger navbar-toggler collapsed"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#<?= $navwalker_id;?>"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </button>
+                </div>
+            </nav>
+        </div>
     </div>
 </header>

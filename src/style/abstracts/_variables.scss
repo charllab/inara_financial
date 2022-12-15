@@ -37,7 +37,8 @@ $container-max-widths: (
     sm: 667.5px,
     md: 767.5px,
     lg: 991.5px,
-    xl: 1199.5px,
+    //xl: 1199.5px,
+    xl: 1024.5px,
     xxl: 1108px + 60px
 );
 
@@ -61,3 +62,9 @@ $matrix-block-margin: $figure-margin;
 
 // Navbar
 $navbar-nav-link-padding-x:1rem;
+
+// Easings
+$ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+$ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+$ease-in-back: cubic-bezier(0.36, 0, 0.66, -0.56);
+$ease-in-out-back: cubic-bezier(0.68, -0.6, 0.32, 1.6);

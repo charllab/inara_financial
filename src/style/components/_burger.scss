@@ -1,0 +1,58 @@
+.burger{
+    width:35px;
+    height:35px;
+    position:relative;
+    background-color:$secondary;
+    border-radius:0;
+    transition: transform 0.25s ease-out;
+
+    &:focus{
+        outline:0;
+    }
+
+    > *{
+        content:"";
+        position:absolute;
+        left:calc(50% - 12px);
+        top:calc(50% - 1px);        
+        width: 24px;
+        height: 2px;
+        background-color: $bg-white;        
+        transition:
+                transform 0.25s ease-out,                 
+                opacity 0.25s ease-out;
+    }
+
+    //burger state
+    &.navbar-toggler.collapsed{
+        > *{
+            &:nth-child(1){            
+                transform:translateY(-8px);
+            }
+            &:nth-child(3){            
+                transform:translateY(8px);
+            }
+        }
+    }
+
+    //x state
+    &.navbar-toggler:not(.collapsed){
+        background-color:$bg-white;
+        transform:scale(1.25);
+
+        > *{
+            background-color:#000;
+
+            &:nth-child(1){
+                transform:translateY(0) rotate(135deg);
+            }
+            &:nth-child(2){
+                transform:translateY(0) rotate(360deg);
+                opacity:0;
+            }
+            &:nth-child(3){
+                transform:translateY(0) rotate(-135deg);
+            }
+        }
+    }
+}
