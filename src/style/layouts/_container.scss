@@ -20,10 +20,3 @@
         pointer-events:none;
     }
 }
-
-@include media-breakpoint-down(lg) {
-    .container {
-        padding: 0 2.25rem;
-        max-width: 100%;
-    }
-}

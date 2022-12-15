@@ -4,10 +4,18 @@
     h2, p{
         color:$text-light;
         text-align:center;
+
+        @include sp{
+            text-align:left;
+        }
     }
 
     h2{
         margin-bottom:0.8rem;
+
+        @include sp{
+            font-size:25px;
+        }
     }
 
     p{
@@ -21,6 +29,11 @@
     height:124px;
     margin:0 auto;
     display:block;
+
+    @include sp{
+        width:100%;
+        height:auto;
+    }
 }
 
 .main-catch-section__content{
@@ -29,6 +42,10 @@
     position:relative;
     padding:55px 97px 24px;
     margin-top:131px;
+
+    @include sp{
+        padding:55px 15px 24px;
+    }
 
     //line
     &:before{
@@ -40,5 +57,9 @@
         left:50%;
         background-color:$secondary;
         border-radius:20px;
+
+        @include sp{
+            width:3px;
+        }
     }
 }

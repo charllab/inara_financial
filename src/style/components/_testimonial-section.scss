@@ -10,6 +10,13 @@
         position:relative;
         z-index:1;
 
+        @include sp{
+            display:inline;
+            font-size:28px;
+            line-height:1.219;
+            margin:0;
+        }
+
         //line
         &:before{
             content:'';
@@ -20,6 +27,15 @@
             right:calc(100% + 12px);
             top:0.6em;
             border-radius:20px;
+
+            @include sp{
+                width:100px;
+                height:3px;                
+                left:inherit;
+                top:inherit;
+                left:calc(100% + 15px);
+                bottom:13px;                
+            }
         }
 
     }
@@ -27,6 +43,10 @@
 
 .testimonial-section__content{
     display:flex;
+
+    @include sp{
+        display:block;
+    }
 
     h2{
         order:2;
@@ -43,6 +63,10 @@
     border-radius:20px;
     position:relative;
 
+    @include sp{
+        padding:50px 20px 17px;
+    }
+
     .carousel-control-prev,
     .carousel-control-next{
         background-color:$bg-white;
@@ -57,12 +81,38 @@
         width:48px;
         height:48px;
 
+        @include sp{
+            position:relative;
+            display:inline-flex;
+            right:inherit;
+            left:50%;
+            bottom:0;
+        }
+
         i{
             color:$secondary;
         }
     }
 
+    .carousel-control-next{
+        @include sp{
+            transform:translateX(calc(-50% - 52px + 48px));
+        }
+    }
+
     .carousel-control-prev{
         right:calc(106px + 48px + 48px);
+
+        @include sp{
+            right:inherit;
+            transform:translateX(calc(-50% - 48px));
+        }
+    }
+}
+
+.testimonial-section__heading{
+    @include sp{
+        padding:0 20px;
+        overflow:hidden;
     }
 }

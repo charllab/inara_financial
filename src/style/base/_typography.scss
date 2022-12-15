@@ -31,15 +31,18 @@ body {
 
 @mixin h1{
     font-size:50px;
-    font-weight:$medium;
+    font-weight:$medium;    
 }
 .h1, h1{
     @include h1;
 }
 
-.h2, h2{
+@mixin h2{
     font-size:30px;
-    font-weight:$bold;
+    font-weight:$bold;    
+}
+.h2, h2{
+    @include h2;
 }
 
 .h3, h3{

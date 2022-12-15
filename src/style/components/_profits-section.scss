@@ -4,8 +4,14 @@
     h2{
         @include h1;
         position:relative;
-        display:inline-block;        
+        display:inline-block;
         margin-bottom:2.2rem;
+
+        @include sp{
+            display:inline;
+            font-size:28px;
+            line-height:1.219;
+        }
 
         //line
         &:after{
@@ -16,6 +22,15 @@
             position:absolute;
             left:calc(100% + 23px);
             top:calc(50% + 5px);
+
+            @include sp{
+                width:100px;
+                height:3px;                
+                left:inherit;
+                top:inherit;
+                left:calc(100% + 15px);
+                bottom:13px;                
+            }
         }
     }
 }
@@ -26,12 +41,32 @@
     padding:0;
     margin:-15px;
 
+    @include sp{
+        display:block;
+        margin:-50px 0;
+    }
+
     > *{
         flex:0 0 50%;
         padding:15px;
 
+        @include sp{
+            padding:50px 0;
+        }
+
         &:first-child{
             margin-top:141px;
+
+            @include sp{
+                margin-top:100px;
+            }
         }
+    }
+}
+
+.profits-section__heading{    
+    @include sp{
+        padding:0 20px;
+        overflow:hidden;
     }
 }

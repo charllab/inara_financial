@@ -7,9 +7,11 @@
     display:flex;
     justify-content: space-between;
 
-    > *{
-        border:1px solid red;
+    @include sp{
+        display:block;
+    }
 
+    > *{        
         &:nth-child(1){
             flex:0;
         }
@@ -20,6 +22,10 @@
     object-fit: contain;
     width:253px;
     height:auto;
+
+    @include sp{
+        width:100%;
+    }
 }
 
 .footer__cert-list{
@@ -28,9 +34,22 @@
     display:flex;
     margin-top:45px;
 
+    @include sp{
+        margin:50px -12px;
+    }
+
     li{
+        @include sp{
+            flex:0 0 25% !important;
+            padding:0 12px;
+        }
+
         &:not(:first-child){
             margin-left:29px;
+
+            @include sp{
+                margin-left:0;
+            }
         }
 
         &:nth-child(1){
@@ -61,12 +80,24 @@
     margin-top:-8px;
     margin-right:62px;
 
+    @include sp{
+        display:block;
+    }
+
     dl:not(:first-child){
         margin-left:68px;
+
+        @include sp{
+            margin-left:0;
+        }
     }
 
     dt{
         @include body-text-semi;
+
+        @include sp{
+            font-size:18px;
+        }
     }
 
     dd{
@@ -95,11 +126,29 @@
     margin-top:15px;
     margin-right:45px;
 
+    @include sp{
+        margin:0;
+    }
+
+    @include sp{
+        display:block;
+    }
+
     p{
         margin:0;
+
+        @include sp{
+            font-size:18px;
+        }
     }
 
     .button{
         margin-left:35px;
+
+        @include sp{
+            margin-left:0;
+            margin-top:10px;
+            max-width:223px;
+        }
     }
 }

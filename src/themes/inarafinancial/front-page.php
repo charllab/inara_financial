@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-<!--
+
 <div class="hero">
     <?= wp_get_attachment_image(get_field('hero')['image'], 'hero');?>    
-    <div class="container">
+    <div class="hero__container container">
         <div class="hero__content">
             <?= get_field('hero')['content'];?>
             <ul class="hero__buttons">
@@ -30,9 +30,10 @@
         </div>
     </div>
 </section>
+
 <section class="profits-section">
     <div class="profits-section__container container">
-        <?= get_field('profits_section')['content'];?>
+        <div class="profits-section__heading"><?= get_field('profits_section')['content'];?></div>
         <?php
         $profit_cards=get_field('profits_section')['cards'];
         if(!empty($profit_cards)){?>
@@ -50,10 +51,11 @@
         <?php }?>        
     </div>
 </section>
+
 <section class="testimonial-section">
     <div class="testimonial-section__container container">
         <div class="testimonial-section__content">
-            <?= get_field('testimonial_section')['content'];?>
+            <div class="testimonial-section__heading"><?= get_field('testimonial_section')['content'];?></div>
             <?php
             $testimonial_cards=get_field('testimonial_section')['cards'];
             if(!empty($testimonial_cards)){?>
@@ -92,5 +94,5 @@
         </div>
     </div>
 </section>
-                        -->
+                        
 <?php get_footer();

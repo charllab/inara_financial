@@ -19,12 +19,19 @@
     }
 }
 
+
 .hero__content{
     background-color:$bg-light;
     border-radius:20px;
     position:absolute;
     bottom:67px;
     padding:23px 36px 4px 30px;
+
+    @include sp{
+        position:static;
+        background-color:transparent;
+        padding:23px 0 4px;
+    }
 
     .sub{
         margin-bottom:6px;
@@ -40,10 +47,19 @@
     align-items:center;
     list-style-type:none;
     padding:0;
-    margin-top:12px;    
+    margin-top:12px;
+
+    @include sp{
+        display:block;
+    }
     
 
     > *:first-child{
         margin-right:1rem;
+
+        @include sp{
+            margin-right:0;
+            margin-bottom:15px;
+        }
     }
 }

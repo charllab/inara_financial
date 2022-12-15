@@ -4,10 +4,18 @@
     h2{
         @include h1;
         margin-bottom:1.4rem;
+
+        @include sp{
+            font-size:28px;
+        }
     }
 
     .sub-text{
         position:relative;
+
+        @include sp{
+            line-height:1.2;
+        }
 
         //line
         &:before{
@@ -19,6 +27,10 @@
             position:absolute;
             top:calc(50% - 3px);
             right:calc(100% + 20px);
+
+            @include sp{
+                display:none;
+            }
         }
     }
 
@@ -36,6 +48,10 @@
     border-radius:20px;    
     background-color: $bg-light;
 
+    @include sp{
+        display:block;
+    }
+
     > *{
         &:first-child{
             flex:0 0 445px;
@@ -52,8 +68,17 @@
     object-fit:cover;
     width:100%;
     height:auto;
+
+    @include sp{
+        object-position:center -10vw;
+        height:291px;
+    }
 }
 
 .about-section__content{
     padding:63px 62px 0 61px;
+
+    @include sp{
+        padding:63px 15px 39px;
+    }
 }

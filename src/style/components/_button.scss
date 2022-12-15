@@ -9,6 +9,10 @@
     font-weight:$semibold;
     color:$text-light;
 
+    @include sp{
+        display:flex;
+    }
+
     &:hover{
         text-decoration: none;
         color:$text-light;
