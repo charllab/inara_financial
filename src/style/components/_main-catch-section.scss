@@ -1,5 +1,18 @@
 .main-catch-section{
     margin-top:92px;
+
+    h2, p{
+        color:$text-light;
+        text-align:center;
+    }
+
+    h2{
+        margin-bottom:0.8rem;
+    }
+
+    p{
+        @include sub-text;
+    }
 }
 
 .main-catch-section img{
@@ -27,19 +40,5 @@
         left:50%;
         background-color:$secondary;
         border-radius:20px;
-    }
-
-    h2, p{
-        color:$text-light;
-        text-align:center;
-    }
-
-    h2{
-        margin-bottom:0.8rem;
-    }
-
-    p{
-        font-size:20px;
-        font-weight:$semibold;
     }
 }

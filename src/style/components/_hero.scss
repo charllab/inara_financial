@@ -1,5 +1,13 @@
 .hero{
     position:relative;
+
+    h1{
+        @include sub-text;
+    }
+
+    p{
+        @include body-text;
+    }
 }
 
 .hero > img{

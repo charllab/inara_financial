@@ -1,11 +1,31 @@
+.about-section{
+    h2{
+        @include h1;
+    }
+}
+
 .about-section__inner{
     display:flex;
     border-radius:20px;
     background-color: $bg-light;
+
+    > *{
+        border:1px solid red;
+
+        &:first-child{
+            flex:0 0 445px;
+        }
+    }
 }
 
-.about-section img{
+.about-section__image{
     border-radius:20px;
+}
+
+.about-section__image img{
+    object-fit:cover;
+    width:100%;
+    height:auto;
 }
 
 .about-section__content{

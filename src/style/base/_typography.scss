@@ -29,9 +29,12 @@ body {
     line-height:1.715;
 }
 
-.h1, h1{
+@mixin h1{
     font-size:50px;
     font-weight:$medium;
+}
+.h1, h1{
+    @include h1;
 }
 
 .h2, h2{
@@ -72,17 +75,27 @@ body {
     margin-bottom: 1rem;
 }
 
-.sub-text{
+@mixin sub-text{
     font-size:20px;
     font-weight:$semibold;
 }
+.sub-text{
+    @include sub-text;
+}
 
-.body-text{
+
+@mixin body-text{
     font-size:16px;
     font-weight:$regular;
 }
+.body-text{
+    @include body-text;
+}
 
-.body-text-semi{
+@mixin body-text-semi{
     font-size:16px;
     font-weight:$semibold;
+}
+.body-text-semi{
+    @include body-text-semi;
 }
