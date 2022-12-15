@@ -1,5 +1,5 @@
 .profits-section{
-    margin-top:91px;
+    margin:172px 0 62px;
 
     h2{
         @include h1;
@@ -18,10 +18,6 @@
             top:calc(50% + 5px);
         }
     }
-}
-
-.profits-section{
-    padding:100px 0;
 }
 
 .profits-section ul{
