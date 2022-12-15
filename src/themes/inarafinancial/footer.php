@@ -36,7 +36,7 @@
             <?php $book_section=get_field('footer', 'options')['book_section'];?>
             <div class="footer__book">
                 <p class="body-text-semi"><?= $book_section['heading'];?></p>
-                <a class="button" href="<?= $book_section['book_button']['link'];?>"><?= $book_section['book_button']['label'];?></a>
+                <a class="button button--footer-book" href="<?= $book_section['book_button']['link'];?>"><?= $book_section['book_button']['label'];?></a>
             </div>
         </div>
     </div>
