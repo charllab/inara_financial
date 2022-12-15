@@ -31,20 +31,22 @@
 </section>
 <section class="profits-section">
     <div class="profits-section__container container">
-        <h2>Improve profits instantly.</h2>
-        <ul>
-            <?php for($i=0; $i < 2; $i++){?>
-                <li>
-                    <div class="profit-card">
-                        <img src="https://placekitten.com/162/162" alt="">
-                        <h3>Startup Profits</h3>
-                        <p class="body-text-semi">New small businesses with strong revenue potential</p>
-                        <p>Get the keys to smart financial decisions so you can reach your business goals faster.</p>
-                        <a class="button button--arrow" href="#">Learn More<i class="fas fa-chevron-right"></i></a>
-                    </div>
-                </li>
-            <?php }?>
-        </ul>
+        <?= get_field('profits_section')['content'];?>
+        <?php
+        $profit_cards=get_field('profits_section')['cards'];
+        if(!empty($profit_cards)){?>
+            <ul>
+                <?php foreach($profit_cards as $card){?>
+                    <li>
+                        <div class="profit-card">                            
+                            <?= wp_get_attachment_image($card['icon']);?>
+                            <?= $card['content'];?>
+                            <a class="button button--arrow" href="<?= $card['learn_button']['link'];?>"><?= $card['learn_button']['label'];?><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </li>
+                <?php }?>
+            </ul>
+        <?php }?>        
     </div>
 </section>
 <section class="testimonial-section">
