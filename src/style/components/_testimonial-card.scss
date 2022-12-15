@@ -1,4 +1,8 @@
 .testimonial-card{        
+    blockquote{
+        @include sub-text;
+    }
+
     figcaption{
         display:flex;
         align-items: center;

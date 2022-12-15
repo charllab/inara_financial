@@ -2,6 +2,7 @@
     background-color:$bg-highlight;
 
     h2{
+        @include h1;
         color:$text-light;
     }
 }
