@@ -18,23 +18,25 @@
             <?php }?>
         </div>
         <div>
+            <?php $contact=get_field('contact', 'options');?>
             <div class="footer__contact">
                 <dl>
-                    <dt class="body-text-semi">Address</dt>
-                    <dd>dasda</dd>
+                    <dt>Address</dt>
+                    <dd><?= $contact['address'];?></dd>
                 </dl>
                 <dl>
-                    <dt class="body-text-semi">Email</dt>
-                    <dd>dasd</dd>
+                    <dt>Email</dt>
+                    <dd><a href="mailto:<?= $contact['email'];?>" target="_blank"><?= $contact['email'];?></a></dd>
                 </dl>
                 <dl>
-                    <dt class="body-text-semi">Phone number</dt>
-                    <dd>dasd</dd>
+                    <dt>Phone number</dt>
+                    <dd><a href="tel:<?= strip_tel($contact['phone_number']);?>" target="_blank"><?= $contact['phone_number'];?></a></dd>
                 </dl>
             </div>
+            <?php $book_section=get_field('footer', 'options')['book_section'];?>
             <div class="footer__book">
-                <p class="body-text-semi">Get In touch with Us:</p>
-                <a class="button" href="#">Book a Discover Call</a>
+                <p class="body-text-semi"><?= $book_section['heading'];?></p>
+                <a class="button" href="<?= $book_section['book_button']['link'];?>"><?= $book_section['book_button']['label'];?></a>
             </div>
         </div>
     </div>

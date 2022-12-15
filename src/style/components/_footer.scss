@@ -52,10 +52,22 @@
 .footer__contact{
     color:$text-light;
     display:flex;
-    margin:0 -50px;
 
-    dl{
-        padding:0 50px;
+    dt{
+        @include body-text-semi;
+    }
+
+    dd *{
+        padding:0;
+        margin:0;
+    }
+
+    a{
+        color:$text-light;
+
+        &:hover{
+            text-decoration:none;
+        }
     }
 }
 
