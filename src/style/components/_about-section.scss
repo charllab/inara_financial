@@ -1,17 +1,42 @@
 .about-section{
+    margin-top:91px;
+
     h2{
         @include h1;
+        margin-bottom:1.4rem;
+    }
+
+    .sub-text{
+        position:relative;
+
+        //line
+        &:before{
+            content:'';
+            width:142px;
+            height:6px;
+            border-radius: 20px;
+            background-color:$secondary;
+            position:absolute;
+            top:calc(50% - 3px);
+            right:calc(100% + 20px);
+        }
+    }
+
+    p[class="sub-text"]{
+        margin-bottom:1.625rem;
+    }
+
+    p:not([class]){
+        margin-bottom:1.55rem;
     }
 }
 
 .about-section__inner{
     display:flex;
-    border-radius:20px;
+    border-radius:20px;    
     background-color: $bg-light;
 
     > *{
-        border:1px solid red;
-
         &:first-child{
             flex:0 0 445px;
         }
@@ -20,6 +45,7 @@
 
 .about-section__image{
     border-radius:20px;
+    overflow:hidden;
 }
 
 .about-section__image img{
@@ -29,5 +55,5 @@
 }
 
 .about-section__content{
-    padding:50px;
+    padding:63px 62px 0 61px;
 }

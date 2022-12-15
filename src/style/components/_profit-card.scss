@@ -1,7 +1,16 @@
 .profit-card{
     background-color:$bg-light;
-    padding:50px;
+    padding:40px 30px 28px;
     position:relative;
+    border-radius:20px;
+
+    h3{
+        margin-bottom:1.5rem;
+    }
+
+    .button{
+        margin-top:30px;
+    }
 }
 
 .profit-card > img{
@@ -9,7 +18,7 @@
     height:162px;
     object-fit: contain;
     position:absolute;
-    top:0;
+    bottom:calc(100% + 15px);
     right:59px;
-    transform:translateY(-50%);
+    transform:translateY(50%);
 }
