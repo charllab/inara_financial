@@ -1,5 +1,5 @@
 .main-catch-section{
-    margin:100px 0;
+    margin-top:92px;
 }
 
 .main-catch-section img{
@@ -14,8 +14,8 @@
     background-color:$bg-highlight;
     border-radius: 20px;
     position:relative;
-    padding:55px 20px;
-    margin-top:100px;
+    padding:55px 97px 24px;
+    margin-top:131px;
 
     //line
     &:before{
@@ -23,8 +23,8 @@
         width:6px;
         height:118px;
         position:absolute;
-        bottom:calc(100% - 40px);
-        left:calc(50% - 3px);
+        bottom:calc(100% - 26px);
+        left:50%;
         background-color:$secondary;
         border-radius:20px;
     }
@@ -32,5 +32,14 @@
     h2, p{
         color:$text-light;
         text-align:center;
+    }
+
+    h2{
+        margin-bottom:0.8rem;
+    }
+
+    p{
+        font-size:20px;
+        font-weight:$semibold;
     }
 }
