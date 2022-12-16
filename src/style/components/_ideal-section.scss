@@ -1,0 +1,36 @@
+.ideal-section{
+    margin:75px auto;
+}
+
+.ideal-section__content{
+    text-align:center;
+    color:$primary;
+    padding:0 60px;
+}
+
+.ideal-section__list{
+    list-style-type: none;
+    padding:0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-top:50px;
+}
+
+.ideal-section__list-item{
+    //border:1px solid blue;
+    flex:0 0 33.33333%;
+    text-align:center;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    p{
+        @include sub-text;
+        color:#000;
+    }
+}
+
+.ideal-section__card{
+    //border:1px solid red;
+}

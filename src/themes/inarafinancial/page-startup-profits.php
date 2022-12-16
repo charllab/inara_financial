@@ -15,4 +15,5 @@
 ) );?>
 <?php get_template_part( 'partials/blueprint-section' );?>
 <?php get_template_part( 'partials/book-banner-section' );?>
+<?php get_template_part( 'partials/ideal-section' );?>
 <?php get_footer();
