@@ -1,11 +1,24 @@
 .profits-banner-section{
-    margin:104px auto;
+    margin:104px auto 130px;
+
+    h2{
+        margin-bottom:0.1rem;
+    }
+
+    p{
+        @include sub-text;
+    }
+
+    .button.button--book{
+        padding:13px 46px;
+        margin-top:24px;
+    }
 }
 
 
 .profits-banner-section__content{
     background-color: $bg-light;
     border-radius:20px;
-    padding:77px 200px;
+    padding:77px 100px 40px;
     text-align:center;    
 }

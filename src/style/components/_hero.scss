@@ -18,12 +18,13 @@
     .hero__content{
         bottom:0;
         border-radius:20px 20px 0 0;
-        padding:23px 36px 4px;
+        padding:31px 39px 19px;
     }
 }
 
 .hero > img{
     object-fit: cover;
+    object-position: top;
     width:100%;
 
     @include media-breakpoint-down(lg){        
@@ -56,7 +57,7 @@
 
 .hero__icon{
     position:absolute;
-    bottom:calc(100% - 30px);
+    bottom:calc(100% - 34px);
     left:50%;
     transform:translateX(-50%);
 }

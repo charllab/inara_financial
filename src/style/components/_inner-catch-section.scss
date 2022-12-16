@@ -1,7 +1,20 @@
+.inner-catch-section{
+    margin:60px auto;
+
+    p{
+        @include sub-text;
+    }
+
+    .button.button--book{
+        padding:13px 46px;
+        margin-top:36px;
+    }
+}
+
 .inner-catch-section__content{
     background-color:$bg-light;
     border-radius: 20px;
     position:relative;
-    padding:55px 97px 24px;
+    padding:55px 50px 34px;
     text-align: center;
 }

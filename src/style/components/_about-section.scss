@@ -44,6 +44,8 @@
 }
 
 .about-section--profits{
+    margin-top:66px;
+
     .sub-text{
         //remove line
         &:before{
@@ -54,6 +56,11 @@
     .about-section__content{
         padding:0 30px;
 
+        h2{
+            margin-top:-5px;
+            margin-bottom:1rem;
+        }
+
         ul{
             list-style: none;
             padding:0;
@@ -61,11 +68,16 @@
 
         p ~ ul{            
             margin-top:-1.55rem;
+            margin-bottom:21px;
         }
-
+        
         strong{
             color:$primary;
             font-weight:$semibold;
+        }
+
+        .sub-text{
+            margin-bottom:1.47rem;
         }
     }
 

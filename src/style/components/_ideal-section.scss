@@ -1,5 +1,14 @@
 .ideal-section{
     margin:75px auto;
+
+    h2{
+        @include h1;
+        margin-bottom:0.6rem;
+    }
+
+    .sub-text{
+        margin-bottom:2.15rem;
+    }
 }
 
 .ideal-section__content{
@@ -14,7 +23,8 @@
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
-    margin-top:50px;
+    margin:-40px 0;
+    margin-top:44px;
 }
 
 .ideal-section__list-item{
@@ -24,13 +34,17 @@
     display:flex;
     align-items: flex-end;
     justify-content: center;
+    padding:40px 0;
+}
+
+.ideal-section__card{
+    > *{
+        //border:1px solid red;
+    }
 
     p{
         @include sub-text;
         color:#000;
+        margin-top:20px;
     }
-}
-
-.ideal-section__card{
-    //border:1px solid red;
 }
