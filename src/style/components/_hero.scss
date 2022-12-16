@@ -66,6 +66,10 @@
     object-fit: contain;
     width:162px;
     height:auto;
+
+    @include sp{
+        width:100px;
+    }
 }
 
 .hero__buttons{

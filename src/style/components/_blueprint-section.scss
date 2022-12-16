@@ -6,9 +6,23 @@
     background-color:$bg-light;
     border-radius:20px;
     padding:70px 95px;
+    color:$primary;
+
+    @include sp{
+        padding:70px 21px;
+    }
 
     h2{
         text-align:center;
+
+        @include sp{
+            text-align: left;
+        }
+    }
+
+    p{
+        font-size:16px;
+        font-weight:$medium;
     }
 
     ul{
@@ -17,20 +31,37 @@
         display:flex;
         flex-wrap:wrap;
 
+        @include sp{
+            display:block;
+        }
+
         > li{
             flex:0 0 50%;
             position:relative;
             display:flex;
             align-items:center;
+            color:$primary;
+            padding-right:91px;
+            @include body-text-semi;
+
+            @include sp{
+                padding-right:0;
+                line-height:1.2;                
+            }
 
             //bullet icon
             &:before{
                 content:'';
                 background:url('../images/blueprint-check.svg') no-repeat center/contain;
-                width:50px;
+                flex:0 0 50px;
                 height:90px;
                 display:inline-block;
                 margin-right:17px;
+
+                @include sp{                    
+                    height:73px;
+                    margin-right:6px;
+                }
             }
         }
     }

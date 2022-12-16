@@ -1,6 +1,12 @@
 .inner-catch-section{
     margin:60px auto;
 
+    h2{
+        @include sp{
+            font-size:25px;
+        }
+    }
+
     p{
         @include sub-text;
     }
@@ -17,4 +23,9 @@
     position:relative;
     padding:55px 50px 34px;
     text-align: center;
+
+    @include sp{
+        padding:55px 22px 34px;
+        text-align: left;
+    }
 }

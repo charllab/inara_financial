@@ -53,8 +53,20 @@
         }
     }
 
+    .about-section__inner{        
+        @include sp{
+            padding:0 8px;
+            background-color: transparent;
+        }
+    }
+
     .about-section__content{
         padding:0 30px;
+
+        @include sp{
+            margin-top:27px;
+            padding:0 15px;
+        }
 
         h2{
             margin-top:-5px;
@@ -78,11 +90,22 @@
 
         .sub-text{
             margin-bottom:1.47rem;
+
+            @include sp{
+                padding-right:40%;
+            }
         }
     }
 
     .about-section__image{
         flex:0 0 540px;
+    }
+
+    .about-section__image img{
+        @include sp{
+            object-position:center top;
+            height:213px;
+        }
     }
 }
 

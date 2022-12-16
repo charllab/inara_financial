@@ -60,6 +60,10 @@
 
 .testimonial-section__slider-container{
     flex:0 0 57.2%;
+
+    @include sp{
+        margin-top:20px;
+    }
 }
 
 .testimonial-section__slider{
