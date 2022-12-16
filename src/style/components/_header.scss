@@ -22,3 +22,10 @@
         width:121px;
     }
 }
+
+.header__nav{
+    @include sp{
+        //we fix the height so that animating the burger doesnt break the document flow
+        height:36.5px;
+    }
+}

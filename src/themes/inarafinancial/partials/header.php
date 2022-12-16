@@ -24,18 +24,18 @@
                         'walker' => new understrap_WP_Bootstrap_Navwalker(),
                     ]); ?>                    
                     <a class="navigation__cta button" href="#">Schedule a Call</a>
-                </div>
-                <div class="navigation__burger">
-                    <button class="burger navbar-toggler collapsed"
-                            type="button"
-                            data-toggle="collapse"
-                            data-target="#<?= $navwalker_id;?>"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </button>
+                    <div class="navigation__burger">
+                        <button class="burger navbar-toggler collapsed"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#<?= $navwalker_id;?>"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </button>
+                    </div>
                 </div>
             </nav>
         </div>
