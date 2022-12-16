@@ -11,6 +11,7 @@
         }
     }
 
+    //nav hidden state
     .navbar-collapse{
         @include sp{
             position:fixed;
@@ -40,6 +41,7 @@
         }
     }
 
+    //nav shown state
     .navbar-collapse.show{
         @include sp{
             background-color:$bg-white;
@@ -55,8 +57,8 @@
                 @for $i from 1 through 8 {
                     &:nth-child(#{$i}) {                                            
                         transition: 
-                            transform 0.8s (0.05s * ($i)) $ease-out-back,
-                            opacity 1s (0.05s * ($i)) ease-out;
+                            transform 0.6s (0.05s * ($i)) $ease-out-back,
+                            opacity 0.8s (0.05s * ($i)) ease-out;
                     }
                 }
             }
