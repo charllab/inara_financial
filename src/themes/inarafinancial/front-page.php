@@ -33,7 +33,6 @@
         <?php }?>        
     </div>
 </section>
-
 <section class="testimonial-section">
     <div class="testimonial-section__container container">
         <div class="testimonial-section__content">

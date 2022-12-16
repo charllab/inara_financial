@@ -13,4 +13,6 @@
 <?php get_template_part( 'partials/about-section', null, array(
     'modifier'=>'profits'
 ) );?>
+<?php get_template_part( 'partials/blueprint-section' );?>
+<?php get_template_part( 'partials/book-banner-section' );?>
 <?php get_footer();
