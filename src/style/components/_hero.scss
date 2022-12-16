@@ -10,6 +10,18 @@
     }
 }
 
+.hero--profits{
+    h1{
+        @include h2;
+    }
+
+    .hero__content{
+        bottom:0;
+        border-radius:20px 20px 0 0;
+        padding:23px 36px 4px;
+    }
+}
+
 .hero > img{
     object-fit: cover;
     width:100%;
@@ -40,6 +52,19 @@
     .body-text{
         margin-bottom:0;
     }
+}
+
+.hero__icon{
+    position:absolute;
+    bottom:calc(100% - 30px);
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.hero__icon > img{
+    object-fit: contain;
+    width:162px;
+    height:auto;
 }
 
 .hero__buttons{

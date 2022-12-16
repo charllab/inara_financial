@@ -1,17 +1,7 @@
 <?php get_header(); ?>
-
-<div class="hero">
-    <?= wp_get_attachment_image(get_field('hero')['image'], 'hero');?>    
-    <div class="hero__container container">
-        <div class="hero__content">
-            <?= get_field('hero')['content'];?>
-            <ul class="hero__buttons">
-                <li><a class="button button--book" href="<?= get_field('hero')['book_button']['link'];?>"><?= get_field('hero')['book_button']['label'];?></a></li>
-                <li><a class="button button--secondary" href="<?= get_field('hero')['learn_button']['link'];?>"><?= get_field('hero')['learn_button']['label'];?></a></li>
-            </ul>
-        </div>
-    </div>
-</div>
+<?php get_template_part( 'partials/hero', null, array(
+    'modifier'=>'hero--frontpage'
+) );?>
 <section class="main-catch-section">
     <div class="main-catch-section__container container">
         <?= wp_get_attachment_image( get_field('logos', 'options')['for_light_bg'] );?>
@@ -93,6 +83,5 @@
             <?php }?>            
         </div>
     </div>
-</section>
-                        
+</section>                        
 <?php get_footer();
