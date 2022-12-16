@@ -46,6 +46,10 @@
 .about-section--profits{
     margin-top:66px;
 
+    @include sp{
+        margin-top:114px;
+    }
+
     .sub-text{
         //remove line
         &:before{
