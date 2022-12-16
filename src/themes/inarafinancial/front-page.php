@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php get_template_part( 'partials/hero', null, array(
-    'modifier'=>'hero--frontpage'
+    'modifier'=>'frontpage'
 ) );?>
 <section class="main-catch-section">
     <div class="main-catch-section__container container">
@@ -10,17 +10,9 @@
         </div>
     </div>
 </section>
-<section class="about-section">
-    <div class="about-section__container container">
-        <div class="about-section__inner">
-            <div class="about-section__image"><?= wp_get_attachment_image( get_field('about_section')['image'], 'about-section' );?></div>
-            <div class="about-section__content">
-                <?= get_field('about_section')['content'];?>
-            </div>
-        </div>
-    </div>
-</section>
-
+<?php get_template_part( 'partials/about-section', null, array(
+    'modifier'=>'frontpage'
+) );?>
 <section class="profits-section">
     <div class="profits-section__container container">
         <div class="profits-section__heading"><?= get_field('profits_section')['content'];?></div>

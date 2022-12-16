@@ -43,6 +43,37 @@
     }
 }
 
+.about-section--profits{
+    .sub-text{
+        //remove line
+        &:before{
+            display:none;
+        }
+    }
+
+    .about-section__content{
+        padding:0 30px;
+
+        ul{
+            list-style: none;
+            padding:0;
+        }
+
+        p ~ ul{            
+            margin-top:-1.55rem;
+        }
+
+        strong{
+            color:$primary;
+            font-weight:$semibold;
+        }
+    }
+
+    .about-section__image{
+        flex:0 0 540px;
+    }
+}
+
 .about-section__inner{
     display:flex;
     border-radius:20px;    
@@ -50,18 +81,13 @@
 
     @include sp{
         display:block;
-    }
-
-    > *{
-        &:first-child{
-            flex:0 0 445px;
-        }
-    }
+    }   
 }
 
 .about-section__image{
     border-radius:20px;
     overflow:hidden;
+    flex:0 0 445px;
 }
 
 .about-section__image img{

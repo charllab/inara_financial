@@ -1,4 +1,4 @@
-<div class="hero <?= $args['modifier'];?>">
+<div class="hero hero--<?= $args['modifier'];?>">
     <?= wp_get_attachment_image(get_field('hero')['image'], 'hero');?>    
     <div class="hero__container container">
         <div class="hero__content">
