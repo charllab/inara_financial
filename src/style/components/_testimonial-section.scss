@@ -47,9 +47,14 @@
     @include sp{
         display:block;
     }
+}
 
-    h2{
-        order:2;
+.testimonial-section__heading{
+    order:2;
+
+    @include sp{
+        padding:0 20px;
+        overflow:hidden;
     }
 }
 
@@ -107,12 +112,5 @@
             right:inherit;
             transform:translateX(calc(-50% - 48px));
         }
-    }
-}
-
-.testimonial-section__heading{
-    @include sp{
-        padding:0 20px;
-        overflow:hidden;
     }
 }
