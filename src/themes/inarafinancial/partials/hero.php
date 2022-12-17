@@ -7,7 +7,9 @@
                 <div class="hero__icon"><?= wp_get_attachment_image(get_field('hero')['icon']);?></div>
             <?php }?>
 
-            <?= get_field('hero')['content'];?>
+            <?php if(!empty(get_field('hero')['content'])){
+                echo get_field('hero')['content'];
+            }?>
 
             <?php if(!empty(get_field('hero')['book_button'])){?>
                 <ul class="hero__buttons">
