@@ -8,14 +8,16 @@
     font-size:14px;
     font-weight:$semibold;
     color:$text-light;
+    transition:background-color 0.25s ease-out;
 
     @include sp{
         display:flex;
     }
-
+    
     &:hover{
         text-decoration: none;
         color:$text-light;
+        background-color:$primary;
     }
 }
 
@@ -24,10 +26,16 @@
     color:$text-dark;
     border:1px solid #000;
     padding: 16px 46px;
+    transition:
+        border-color 0.25s ease-out,
+        color 0.25s ease-out;
 
     &:hover{
         text-decoration: none;
         color:$text-dark;
+        border-color:$secondary;
+        background-color: $bg-light;
+        color:$secondary;
     }
 }
 
@@ -40,6 +48,11 @@
 
     i{
         margin-left:19px;
+        transition:transform 0.25s ease-out;
+    }
+
+    &:hover i{
+        transform:translateX(10px);
     }
 }
 

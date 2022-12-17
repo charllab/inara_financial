@@ -89,6 +89,9 @@
         bottom:46px;
         width:48px;
         height:48px;
+        transition:
+            background-color 0.25s ease-out,
+            border-color 0.25s ease-out;
 
         @include sp{
             position:relative;
@@ -100,12 +103,23 @@
 
         i{
             color:$secondary;
+            transition:transform 0.25s ease-out;
         }
     }
 
     .carousel-control-next{
         @include sp{
             transform:translateX(calc(-50% - 52px + 48px));
+        }
+
+        &:hover{
+            background-color:$primary;
+            border-color:transparent;
+
+            i {
+                color:$bg-white;
+                transform:translateX(2px);
+            }
         }
     }
 
@@ -115,6 +129,16 @@
         @include sp{
             right:inherit;
             transform:translateX(calc(-50% - 48px));
+        }
+
+        &:hover{
+            background-color:$primary;
+            border-color:transparent;
+
+            i {
+                color:$bg-white;
+                transform:translateX(-2px);
+            }
         }
     }
 }
