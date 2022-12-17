@@ -57,3 +57,19 @@ var targetBlankExternalLinks = function () {
             jQuery(this).attr('target', '_blank');
         });
 };
+
+const addUserAgent=()=>{
+    const userAgent=navigator.userAgent;
+    let browser='';
+
+    if(userAgent.includes('Chrome')){
+        browser='chrome';
+    }else if(userAgent.includes('Firefox')){
+        browser='firefox';
+    }else if(userAgent.includes('Safari')){
+        browser='safari';
+    }
+
+    document.querySelector('body').classList.add(browser);
+}
+addUserAgent();

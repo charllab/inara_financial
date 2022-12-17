@@ -119,7 +119,12 @@
 
         ~ .navigation__burger{
             position:fixed;
-            transform:translate(-35px, 0px);
+            transform:translateX(-35px);
+            
+            //browser detection hack to accomodate default position:fixed behavior
+            @at-root .safari &{
+                transform:translateX(0);
+            }
         }
     }
 
