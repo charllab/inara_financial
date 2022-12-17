@@ -101,6 +101,10 @@
             bottom:0;
         }
 
+        @media only screen and (min-width:991.5px) and (max-width:1199.5px){
+            right:calc(106px - 25px);
+        }
+
         i{
             color:$secondary;
             transition:transform 0.25s ease-out;
@@ -129,6 +133,10 @@
         @include sp{
             right:inherit;
             transform:translateX(calc(-50% - 48px));
+        }
+
+        @media only screen and (min-width:991.5px) and (max-width:1199.5px){
+            right:calc(106px + 48px + 48px - 25px);
         }
 
         &:hover{
