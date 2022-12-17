@@ -8,7 +8,9 @@
     font-size:14px;
     font-weight:$semibold;
     color:$text-light;
-    transition:background-color 0.25s ease-out;
+    transition:
+        background-color 0.25s ease-out,
+        color 0.25s ease-out;
 
     @include sp{
         display:flex;

@@ -168,13 +168,19 @@
         }
     }
 
-    .button{
+    .button.button--footer-book{
         margin-left:35px;
 
         @include sp{
             margin-left:0;
             margin-top:10px;
             max-width:223px;
+        }
+
+        &:hover{
+            text-decoration: none;
+            color:$primary;
+            background-color:#fff;
         }
     }
 }
