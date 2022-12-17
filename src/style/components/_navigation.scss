@@ -5,41 +5,44 @@
         }
     }
 
-    .navbar-nav{
-        //nav items hover effect
-        .menu-item{
-            transition:opacity 0.25s ease-out;
-        }
-        &:hover{
+    @include pc{
+        .navbar-nav{
+            //nav items hover effect
             .menu-item{
-                opacity:0.2;
+                transition:opacity 0.25s ease-out;
             }
-        }
-        .menu-item:not(.active) .nav-link{
-            position:relative;
-
-            //underline
-            &:before{
-                content:'';
-                width:calc(100% - 2rem);
-                height:2px;
-                background-color:$primary;
-                position:absolute;
-                right:1rem;
-                bottom:calc(0.5rem - 3px);
-                transform:scaleX(0);
-                transform-origin:right;
-                transition:transform 0.25s ease-out;
+            &:hover{
+                .menu-item{
+                    opacity:0.2;
+                }
             }
-        }
-        .menu-item:hover{
-            opacity:1;
-
-            .nav-link:before{
-                transform:scaleX(0.7);
+            .menu-item:not(.active) .nav-link{
+                position:relative;
+    
+                //underline
+                &:before{
+                    content:'';
+                    width:calc(100% - 2rem);
+                    height:2px;
+                    background-color:$primary;
+                    position:absolute;
+                    right:1rem;
+                    bottom:calc(0.5rem - 3px);
+                    transform:scaleX(0);
+                    transform-origin:right;
+                    transition:transform 0.25s ease-out;
+                }
+            }
+            .menu-item:hover{
+                opacity:1;
+    
+                .nav-link:before{
+                    transform:scaleX(0.7);
+                }
             }
         }
     }
+    
 
     .navbar-collapse.collapse:not(.show){
         @include sp{
