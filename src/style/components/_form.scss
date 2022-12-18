@@ -22,4 +22,10 @@
         padding: 10px 97px;
         cursor:pointer;
     }
+
+    .gform_footer.top_label{
+        @include sp{
+            justify-content: center;
+        }
+    }
 }
