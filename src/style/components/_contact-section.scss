@@ -53,7 +53,7 @@
     transform:translateY(-100px);
 
     @include sp{
-        padding:30px 27px 2px;
+        padding:30px 27px;
         transform:none;
         margin-top:50px;
     }

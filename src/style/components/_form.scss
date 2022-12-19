@@ -26,6 +26,14 @@
     .gform_footer.top_label{
         @include sp{
             justify-content: center;
+            padding-bottom:0;
+        }
+    }
+
+    .ginput_recaptcha > div{
+        @media only screen and (max-width:375px){
+            transform:scale(0.77);
+            transform-origin:top left;
         }
     }
 }
