@@ -13,8 +13,8 @@
                 <?php
                     //bootstrap navwalker hooks
                     $navwalker_id='js-nav';
-                ?>                
-                <div class="navigation__main">          
+                ?>
+                <div class="navigation__main">
                     <?php wp_nav_menu([
                         'theme_location' => 'primary',
                         'container_class' => 'collapse navbar-collapse',
@@ -22,8 +22,8 @@
                         'menu_class' => 'navbar-nav',
                         'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
                         'walker' => new understrap_WP_Bootstrap_Navwalker(),
-                    ]); ?>                    
-                    <a class="navigation__cta button" href="#">Schedule a Call</a>
+                    ]); ?>
+                    <a class="navigation__cta button" href="#">Book a Call</a>
                     <div class="navigation__burger">
                         <button class="burger navbar-toggler collapsed"
                                 type="button"
