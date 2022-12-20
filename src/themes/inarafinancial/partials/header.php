@@ -23,7 +23,7 @@
                         'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
                         'walker' => new understrap_WP_Bootstrap_Navwalker(),
                     ]); ?>
-                    <a class="navigation__cta button" href="#">Book a Call</a>
+                    <a class="navigation__cta button" href="<?php echo esc_url(home_url('/contact')); ?>">Book a Call</a>
                     <div class="navigation__burger">
                         <button class="burger navbar-toggler collapsed"
                                 type="button"
