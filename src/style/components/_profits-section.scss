@@ -1,6 +1,10 @@
 .profits-section{
     margin:172px 0 62px;
 
+    @include sp{
+        margin:53px 0 62px;
+    }
+
     h2{
         @include h1;
         position:relative;

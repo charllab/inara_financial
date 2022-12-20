@@ -20,6 +20,7 @@
 
     p{
         @include sub-text;
+        color:$text-light;
     }
 }
 
