@@ -7,7 +7,7 @@
     a[href*="mailto"]{
         position:relative;
 
-        //underline        
+        //underline
         &:after{
             content:'';
             width:100%;
@@ -37,7 +37,7 @@
         display:block;
     }
 
-    > *{        
+    > *{
         &:nth-child(1){
             flex:0;
         }
@@ -102,7 +102,7 @@
 
 .footer__contact{
     color:$text-light;
-    display:flex;
+    //display:flex;
     margin-top:-8px;
     margin-right:62px;
 
@@ -111,7 +111,7 @@
     }
 
     dl:not(:first-child){
-        margin-left:68px;
+        //margin-left:68px;
 
         @include sp{
             margin-left:0;
@@ -132,7 +132,7 @@
 
     dd *{
         padding:0;
-        margin:0;        
+        margin:0;
     }
 
     a{
@@ -145,12 +145,12 @@
 }
 
 .footer__book{
-    display:flex;
-    align-items: center;
-    justify-content: flex-end;
+    //display:flex;
+    //align-items: center;
+    //justify-content: flex-end;
     color:$text-light;
-    margin-top:15px;
-    margin-right:45px;
+    //margin-top:15px;
+    //margin-right:45px;
 
     @include sp{
         margin:0;
@@ -169,7 +169,7 @@
     }
 
     .button.button--footer-book{
-        margin-left:35px;
+        //margin-left:35px;
 
         @include sp{
             margin-left:0;
