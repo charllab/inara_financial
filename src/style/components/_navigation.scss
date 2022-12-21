@@ -18,7 +18,7 @@
             }
             .menu-item:not(.active) .nav-link{
                 position:relative;
-    
+
                 //underline
                 &:before{
                     content:'';
@@ -35,14 +35,14 @@
             }
             .menu-item:hover{
                 opacity:1;
-    
+
                 .nav-link:before{
                     transform:scaleX(0.7);
                 }
             }
         }
     }
-    
+
 
     .navbar-collapse.collapse:not(.show){
         @include sp{
@@ -57,7 +57,7 @@
             top:0;
             left:0;
             width:100vw;
-            height:100vh;            
+            height:100vh;
             padding:86px 30px;
             transition:background-color 0.25s 0.4s ease-in;
             z-index:100;
@@ -83,8 +83,8 @@
                 opacity:0;
 
                 @for $i from 1 through 8 {
-                    &:nth-child(#{$i}) {                                            
-                        transition: 
+                    &:nth-child(#{$i}) {
+                        transition:
                             transform 0.4s (0.01s * (8 - $i)) $ease-in-back,
                             opacity 0.8s (0.01s * (8 - $i)) ease-in;
                     }
@@ -100,7 +100,7 @@
             pointer-events:auto;
             transition:background-color 0.25s ease-out;
 
-            &:before{                
+            &:before{
                 transform:scale(5) rotate(45deg) translate(0, 0);
             }
         }
@@ -111,8 +111,8 @@
                 opacity:1;
 
                 @for $i from 1 through 8 {
-                    &:nth-child(#{$i}) {                                            
-                        transition: 
+                    &:nth-child(#{$i}) {
+                        transition:
                             transform 0.6s (0.05s * ($i)) $ease-out-back,
                             opacity 0.8s (0.05s * ($i)) ease-out;
                     }
@@ -123,7 +123,7 @@
         ~ .navigation__burger{
             position:fixed;
             transform:translateX(-35px);
-            
+
             //browser detection hack to accomodate default position:fixed behavior
             @at-root .safari &{
                 transform:translateX(0);
@@ -135,7 +135,7 @@
         font-weight:$medium;
 
         @include sp{
-            display:inline-block;            
+            display:inline-block;
         }
     }
 
@@ -177,5 +177,12 @@
 
     @include sp{
         display:none;
+    }
+}
+
+.page-id-23 {
+    .navigation__cta .button,
+    .button .button--footer-book {
+        display: none;
     }
 }
