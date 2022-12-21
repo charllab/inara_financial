@@ -7,7 +7,15 @@
             <ul class="ideal-section__list">
                 <?php foreach($ideal_list as $item){?>
                     <li class="ideal-section__list-item">
-                        <div class="ideal-section__card">                            
+                        <div class="ideal-section__card"
+                             data-aos="fade-up"
+                             data-aos-offset="120"
+                             data-aos-delay="100"
+                             data-aos-duration="1000"
+                             data-aos-easing="ease"
+                             data-aos-mirror="false"
+                             data-aos-once="false"
+                        >
                             <img src="<?= wp_get_attachment_url($item['icon']);?>" alt="">
                             <p><?= $item['label'];?></p>
                         </div>

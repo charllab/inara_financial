@@ -11,7 +11,15 @@
                 <a class="contact-section__tel" href="tel:<?= strip_tel($contact['phone_number']);?>" target="_blank"><?= $contact['phone_number'];?></a>
             </div>
             <div class="contact-section__form">
-                <div class="form"><?= the_content();?></div>
+                <div class="form"
+                     data-aos="fade-up"
+                     data-aos-offset="120"
+                     data-aos-delay="0"
+                     data-aos-duration="1000"
+                     data-aos-easing="ease"
+                     data-aos-mirror="false"
+                     data-aos-once="false"
+                ><?= the_content();?></div>
             </div>
         </div>
     </div>

@@ -6,7 +6,7 @@
          data-aos="fade-up"
          data-aos-offset="120"
          data-aos-delay="0"
-         data-aos-duration="1000"
+         data-aos-duration="600"
          data-aos-easing="ease"
          data-aos-mirror="false"
          data-aos-once="false"
@@ -22,10 +22,10 @@
     'modifier'=>'frontpage'
 ) );?>
 <section class="profits-section"
-         data-aos="fade-left"
+         data-aos="fade-up"
          data-aos-offset="120"
          data-aos-delay="0"
-         data-aos-duration="1000"
+         data-aos-duration="500"
          data-aos-easing="ease"
          data-aos-mirror="false"
          data-aos-once="false"

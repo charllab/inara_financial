@@ -2,7 +2,15 @@
 <?php get_template_part( 'partials/hero', null, array(
     'modifier'=>'profits'
 ) );?>
-<section class="inner-catch-section">
+<section class="inner-catch-section"
+         data-aos="fade-up"
+         data-aos-offset="120"
+         data-aos-delay="0"
+         data-aos-duration="1000"
+         data-aos-easing="ease"
+         data-aos-mirror="false"
+         data-aos-once="false"
+>
     <div class="inner-catch-section__container container">
         <div class="inner-catch-section__content">
             <?= get_field('catch_section')['content'];?>

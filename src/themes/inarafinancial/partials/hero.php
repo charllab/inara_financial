@@ -1,10 +1,18 @@
-<div class="hero hero--<?= $args['modifier'];?>">
+<div class="hero hero--<?= $args['modifier'];?>"
+     data-aos="fade-left"
+     data-aos-offset="0"
+     data-aos-delay="0"
+     data-aos-duration="1000"
+     data-aos-easing="ease"
+     data-aos-mirror="false"
+     data-aos-once="true"
+>
     <?= wp_get_attachment_image(get_field('hero')['image'], 'hero');?>
     <div class="hero__container container"
          data-aos="fade-up"
          data-aos-offset="0"
-         data-aos-delay="0"
-         data-aos-duration="1000"
+         data-aos-delay="200"
+         data-aos-duration="500"
          data-aos-easing="ease"
          data-aos-mirror="false"
          data-aos-once="true"

@@ -7,7 +7,7 @@
             $testimonial_cards=$testimonial_section['cards'];
             if(!empty($testimonial_cards)){?>
                 <div class="testimonial-section__slider-container"
-                     data-aos="fade-up"
+                     data-aos="fade-right"
                      data-aos-offset="120"
                      data-aos-delay="0"
                      data-aos-duration="1000"
