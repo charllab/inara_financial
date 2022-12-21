@@ -6,7 +6,15 @@
             <?php
             $testimonial_cards=$testimonial_section['cards'];
             if(!empty($testimonial_cards)){?>
-                <div class="testimonial-section__slider-container">
+                <div class="testimonial-section__slider-container"
+                     data-aos="fade-up"
+                     data-aos-offset="120"
+                     data-aos-delay="0"
+                     data-aos-duration="1000"
+                     data-aos-easing="ease"
+                     data-aos-mirror="false"
+                     data-aos-once="false"
+                >
                     <div id="testimonial-slider" class="testimonial-section__slider carousel slide" data-ride="false">
                         <div class="carousel-inner">
                             <?php foreach($testimonial_cards as $i=>$card){?>
@@ -16,7 +24,7 @@
                                             <?= $card['quote'];?>
                                         </blockquote>
                                         <figcaption>
-                                            <?= wp_get_attachment_image($card['author']['image']);?>                                            
+                                            <?= wp_get_attachment_image($card['author']['image']);?>
                                             <div class="body-text-semi">
                                                 <?= $card['author']['credentials']?>
                                             </div>
@@ -34,10 +42,10 @@
                                 <i class="fas fa-arrow-right"></i>
                                 <span class="sr-only">Next</span>
                             </a>
-                        <?php }?>                        
+                        <?php }?>
                     </div>
                 </div>
-            <?php }?>            
+            <?php }?>
         </div>
     </div>
-</section>                        
+</section>

@@ -1,5 +1,9 @@
 jQuery(function () {
 
+    // initialize AOS
+    AOS.init();
+
+
     // Auto target _blank external links
     // targetBlankExternalLinks();
 

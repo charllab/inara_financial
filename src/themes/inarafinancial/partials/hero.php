@@ -1,6 +1,14 @@
 <div class="hero hero--<?= $args['modifier'];?>">
     <?= wp_get_attachment_image(get_field('hero')['image'], 'hero');?>
-    <div class="hero__container container">
+    <div class="hero__container container"
+         data-aos="fade-up"
+         data-aos-offset="0"
+         data-aos-delay="0"
+         data-aos-duration="1000"
+         data-aos-easing="ease"
+         data-aos-mirror="false"
+         data-aos-once="true"
+    >
         <?php if(!empty(get_field('hero')['content'])){?>
             <div class="hero__content">
 

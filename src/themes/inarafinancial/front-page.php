@@ -2,7 +2,15 @@
 <?php get_template_part( 'partials/hero', null, array(
     'modifier'=>'frontpage'
 ) );?>
-<section class="main-catch-section">
+<section class="main-catch-section"
+         data-aos="fade-up"
+         data-aos-offset="120"
+         data-aos-delay="0"
+         data-aos-duration="1000"
+         data-aos-easing="ease"
+         data-aos-mirror="false"
+         data-aos-once="false"
+>
     <div class="main-catch-section__container container">
         <?= wp_get_attachment_image( get_field('logos', 'options')['for_light_bg'] );?>
         <div class="main-catch-section__content">
@@ -13,7 +21,15 @@
 <?php get_template_part( 'partials/about-section', null, array(
     'modifier'=>'frontpage'
 ) );?>
-<section class="profits-section">
+<section class="profits-section"
+         data-aos="fade-left"
+         data-aos-offset="120"
+         data-aos-delay="0"
+         data-aos-duration="1000"
+         data-aos-easing="ease"
+         data-aos-mirror="false"
+         data-aos-once="false"
+>
     <div class="profits-section__container container">
         <div class="profits-section__heading"><?= get_field('profits_section')['content'];?></div>
         <?php
@@ -22,7 +38,7 @@
             <ul>
                 <?php foreach($profit_cards as $card){?>
                     <li>
-                        <div class="profit-card">                            
+                        <div class="profit-card">
                             <?= wp_get_attachment_image($card['icon']);?>
                             <?= $card['content'];?>
                             <a class="button button--arrow" href="<?= $card['learn_button']['link'];?>"><?= $card['learn_button']['label'];?><i class="fas fa-chevron-right"></i></a>
@@ -30,8 +46,8 @@
                     </li>
                 <?php }?>
             </ul>
-        <?php }?>        
+        <?php }?>
     </div>
 </section>
-<?php get_template_part('partials/testimonial-section');?>                       
+<?php get_template_part('partials/testimonial-section');?>
 <?php get_footer();
