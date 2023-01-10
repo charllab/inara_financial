@@ -36,6 +36,7 @@
                         <dt>Phone number</dt>
                         <dd><a href="tel:<?= strip_tel($contact['phone_number']);?>" target="_blank"><?= $contact['phone_number'];?></a></dd>
                     </dl>
+                    <a href="<?php echo esc_url(home_url('/privacy-policy')); ?>" class="text-white d-block mb-3 font-weight-bold">Our Privacy Policy</a>
                 </div>
             </div><!-- col-->
             <div class="col-xxl-3">
